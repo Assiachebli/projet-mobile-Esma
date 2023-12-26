@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:foreground="@drawable/foreground_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg4"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="402dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/my_restaruant_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:padding="14dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:onClick="register"
+        app:layout_constraintWidth_percent=".8"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <TextView
+        android:layout_width="293dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="88dp"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:background="@drawable/btn_db_design"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

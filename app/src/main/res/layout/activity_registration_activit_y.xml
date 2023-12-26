@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivitY">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:drowablePadding="13dp"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg4"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="402dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/my_restaruant_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <EditText
+        android:layout_width="371dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="370dp"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:hint="full_name_"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="EditText"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:layout_width="371dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="288dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:hint="Email_"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="EditText2"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:layout_width="371dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="208dp"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:hint="Password_"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="EditText2"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:onClick="register"
+        android:padding="14dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent=".8"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
